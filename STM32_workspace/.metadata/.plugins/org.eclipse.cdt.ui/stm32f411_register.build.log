@@ -1,0 +1,37 @@
+22:26:30 **** Incremental Build of configuration Debug for project stm32f411_register ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'uart_printf':
+../Core/Src/main.c:195:2: warning: implicit declaration of function 'vsprintf' [-Wimplicit-function-declaration]
+  195 |  vsprintf(buffer, format, aptr);
+      |  ^~~~~~~~
+../Core/Src/main.c: In function 'dma2_uart1rx_init':
+../Core/Src/main.c:230:14: warning: assignment to 'uint32_t' {aka 'long unsigned int'} from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  230 |  *DMA_S5M0AR = recv_data;
+      |              ^
+../Core/Src/main.c: In function 'update_firmware':
+../Core/Src/main.c:303:28: warning: pointer targets in passing argument 1 of 'Flash_Program' differ in signedness [-Wpointer-sign]
+  303 |   Flash_Program(flash_addr + i, new_fw_data[i]);
+      |                 ~~~~~~~~~~~^~~
+      |                            |
+      |                            char *
+../Core/Src/main.c:274:76: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+  274 | __attribute__ ((section (".function_in_ram"))) void Flash_Program(uint8_t* addr, uint8_t value){
+      |                                                                   ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "stm32f411_register.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\HOC_ARM\Thanh_ghi\STM32_workspace\stm32f411_register\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="stm32f411_register.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f411_register.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f411_register.elf  > "stm32f411_register.list"
+arm-none-eabi-objcopy  -O binary  stm32f411_register.elf  "stm32f411_register.bin"
+arm-none-eabi-size   stm32f411_register.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8920	      8	   7380	  16308	   3fb4	stm32f411_register.elf
+Finished building: default.size.stdout
+ 
+Finished building: stm32f411_register.bin
+ 
+Finished building: stm32f411_register.list
+ 
+
+22:26:31 Build Finished. 0 errors, 3 warnings. (took 645ms)
+

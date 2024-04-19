@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;RCC/Drivers/Custom_Driver/Inc/clock.h&apos;" deleteContents="false" description="Delete resource &apos;RCC/Drivers/Custom_Driver/Inc/clock.h&apos;" element1="/RCC/Drivers/Custom_Driver/Inc/clock.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1709561572294"/>
+</session>

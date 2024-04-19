@@ -1,0 +1,5 @@
+clock.c:12:6:clock_init	24	static
+clock.c:58:6:clock_enable_AHB1	24	static
+clock.c:64:6:clock_enable_AHB2	24	static
+clock.c:69:6:clock_enable_APB1	24	static
+clock.c:74:6:clock_enable_APB2	24	static

@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+            "label": "BUILD",
+			"type": "shell",
+			"options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "make",
+			"args":[
+			],
+            
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+		{
+            "label": "FLASH",
+			"type": "shell",
+			"options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "make",
+			"args":[
+				"Flash",			
+			],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+		{
+            "label": "CLEAN",
+			"type": "shell",
+			"options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "make",
+			"args":[
+				"Clean",			
+			],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+	]
+}

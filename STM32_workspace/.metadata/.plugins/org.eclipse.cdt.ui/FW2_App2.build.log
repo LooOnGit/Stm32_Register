@@ -1,0 +1,10 @@
+01:36:16 **** Build of configuration Debug for project FW2_App2 ****
+make -j12 all 
+arm-none-eabi-size   FW2_App2.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10592	    120	  17984	  28696	   7018	FW2_App2.elf
+Finished building: default.size.stdout
+ 
+
+01:36:16 Build Finished. 0 errors, 0 warnings. (took 555ms)
+

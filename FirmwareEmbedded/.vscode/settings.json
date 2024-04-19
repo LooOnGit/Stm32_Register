@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "led.h": "c",
+        "delay.h": "c",
+        "clock.h": "c",
+        "stdint.h": "c",
+        "ADC.h": "c",
+        "Usart.h": "c",
+        "capture.h": "c",
+        "freertos.h": "c",
+        "semphr.h": "c",
+        "event_groups.h": "c",
+        "task.h": "c",
+        "portmacro.h": "c",
+        "queue.h": "c"
+    }
+}

@@ -1,0 +1,13 @@
+main.c:62:6:UART1_init	32	static
+main.c:102:6:UART1_Send_1byte	24	static
+main.c:113:6:UART1_Send_String	24	static
+main.c:121:6:UART1_Recv_1Byte	24	static
+main.c:132:6:USART1_rx_hand	16	static
+main.c:139:6:dma2_uart1rx_init	40	static
+main.c:165:6:DMA2_Stream5_IRQHandler	16	static,ignoring_inline_asm
+main.c:174:6:Flash_Erase_Sector	32	static
+main.c:191:6:Flash_Program	32	static
+main.c:215:5:main	32	static
+main.c:277:6:SystemClock_Config	88	static
+main.c:317:13:MX_GPIO_Init	40	static
+main.c:345:6:Error_Handler	4	static,ignoring_inline_asm

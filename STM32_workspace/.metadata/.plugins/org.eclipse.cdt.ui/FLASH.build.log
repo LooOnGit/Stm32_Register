@@ -1,0 +1,29 @@
+17:27:59 **** Incremental Build of configuration Debug for project FLASH ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:17: warning: passing argument 1 of 'Flash_Program' makes pointer from integer without a cast [-Wint-conversion]
+  124 |   Flash_Program(0x8004000, 0x12);
+      |                 ^~~~~~~~~
+      |                 |
+      |                 int
+../Core/Src/main.c:75:29: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int'
+   75 | void Flash_Program(uint8_t* addr, uint8_t value){
+      |                    ~~~~~~~~~^~~~
+arm-none-eabi-gcc -o "FLASH.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\HOC_ARM\Thanh_ghi\STM32_workspace\FLASH\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FLASH.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FLASH.elf
+ 
+arm-none-eabi-objdump -h -S  FLASH.elf  > "FLASH.list"
+arm-none-eabi-objcopy  -O binary  FLASH.elf  "FLASH.bin"
+arm-none-eabi-size   FLASH.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5008	     20	   1572	   6600	   19c8	FLASH.elf
+Finished building: default.size.stdout
+ 
+Finished building: FLASH.bin
+ 
+Finished building: FLASH.list
+ 
+
+17:28:00 Build Finished. 0 errors, 1 warnings. (took 973ms)
+

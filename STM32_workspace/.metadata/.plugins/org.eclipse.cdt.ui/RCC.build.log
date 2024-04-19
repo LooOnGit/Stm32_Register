@@ -1,0 +1,10 @@
+00:53:18 **** Incremental Build of configuration Debug for project RCC ****
+make -j12 all 
+arm-none-eabi-size   RCC.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5972	     20	   1572	   7564	   1d8c	RCC.elf
+Finished building: default.size.stdout
+ 
+
+00:53:18 Build Finished. 0 errors, 0 warnings. (took 478ms)
+

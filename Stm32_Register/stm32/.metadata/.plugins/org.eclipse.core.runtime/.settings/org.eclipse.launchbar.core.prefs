@@ -1,0 +1,10 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FLASH Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FW1_Bootloader,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FW2_App1,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FW2_App2,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FW3_App2,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RCC,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:SPI,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:Timer,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:stm32f411_register Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FreeRtos
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FLASH\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FreeRtos/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:FreeRtos/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RCC/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:RCC/activeLaunchTarget=null\:---

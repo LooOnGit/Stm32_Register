@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "led.h": "c",
+        "clock.h": "c",
+        "usart.h": "c",
+        "stdio.h": "c",
+        "delay.h": "c",
+        "adc.h": "c",
+        "stdint.h": "c"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "d:\\Dev_STM32\\stm32_vs\\build",
+            "binaryPath": "d:\\Dev_STM32\\stm32_vs\\build\\blink_led.elf",
+            "binaryArgs": []
+        }
+    ]
+}
